@@ -57,7 +57,7 @@ static struct {
 /* デバイス初期化 */
 int serial_init(int index)
 {
-  volatile struct h8_3069f_sci *sci =    [index].sci;
+  volatile struct h8_3069f_sci *sci = regs[index].sci;
 
   sci->scr = 0;
   sci->smr = 0;

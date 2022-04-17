@@ -26,7 +26,7 @@ TARGET = kzload
 
 CFLAGS = -Wall -mh -nostdinc -nostdlib -fno-builtin
 #CFLAGS += -mint32 # intを32ビットにすると掛算／割算ができなくなる
-CFLAGS += -I. 
+CFLAGS += -I.
 #CFLAGS += -g
 CFLAGS += -Os
 CFLAGS += -DKZLOAD
@@ -45,7 +45,7 @@ $(TARGET) :	$(OBJS)
 
 .c.o :		$<
 		$(CC) -c $(CFLAGS) $<
-  
+
 .s.o :		$<
 		$(CC) -c $(CFLAGS) $<
 
