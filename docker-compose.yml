@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  ubuntu-h8:
+    build:
+      context: .
+      dockerfile: Dockerfile
+  # ubuntu-h8-service:
+  #   image: osbook_ubuntu-h8
+    ports:
+      - "5001:80"
+    tty: true
+    volumes:
+      - ./work:/work
+      - ./src:/osbook/src
+
+
+# 停止コンテナ一括削除
+# docker container prune

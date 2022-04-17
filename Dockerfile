@@ -5,7 +5,10 @@ ENV BINUTILS_VERSION=2.19.1
 RUN apt-get update -q -y && \
     apt-get install -y --no-install-recommends wget bzip2 build-essential make patch unzip && \
     apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/* 
+RUN apt-get update
+RUN apt-get install -y vim
+RUN apt-get install -y sudo
 
 WORKDIR /build
 RUN wget --no-check-certificate https://ftp.gnu.org/gnu/binutils/binutils-${BINUTILS_VERSION}.tar.bz2 && \
