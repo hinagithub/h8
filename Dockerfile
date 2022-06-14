@@ -9,6 +9,9 @@ RUN apt-get update -q -y && \
 RUN apt-get update
 RUN apt-get install -y vim
 RUN apt-get install -y sudo
+# gcc
+RUN apt-get install --reinstall build-essential
+
 
 WORKDIR /build
 RUN wget --no-check-certificate https://ftp.gnu.org/gnu/binutils/binutils-${BINUTILS_VERSION}.tar.bz2 && \
