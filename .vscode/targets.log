@@ -6,8 +6,11 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # PARTICULAR PURPOSE.
 
 # This program built for i386-apple-darwin11.3.0
+ 
+make: *** No rule to make target `all'.  Stop.
 
-# Make data base, printed on Tue Jun 14 22:16:23 2022
+
+# Make data base, printed on Mon Jul 18 18:57:13 2022
 
 # Variables
 
@@ -24,6 +27,7 @@ VSCODE_LOG_NATIVE = false
 # automatic
 @F = $(notdir $@)
 # makefile
+ 
 CURDIR := /Users/matsunohinako/work/c/osbook
 # makefile
 SHELL = /bin/sh
@@ -38,13 +42,11 @@ VSCODE_VERBOSE_LOGGING = true
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/nd/53klc6_j3ws_ky8c7l3p4kvm0000gn/T/vscode-ipc-8fe3d302-6935-47c1-b621-b1f2b16322ec.sock
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/nd/53klc6_j3ws_ky8c7l3p4kvm0000gn/T/vscode-ipc-cde6b6dc-f2a5-4058-bc77-45b8ba3dcd71.sock
 # environment
 VSCODE_CWD = /
 # environment
 PATH = /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin
-# environment
-LaunchInstanceID = 49157B8A-38E9-45D5-B464-D1BFCB4CB257
 # environment
 VSCODE_LOG_STACK = false
 # environment
@@ -52,7 +54,7 @@ ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.7hjvPKTWlj/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.XuReWWfA1q/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -72,7 +74,8 @@ VSCODE_CODE_CACHE_PATH = /Users/matsunohinako/Library/Application Support/Code/C
 # environment
 LOGNAME = matsunohinako
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+ 
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
@@ -94,6 +97,7 @@ USER = matsunohinako
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # default
+ 
 MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
 # default
 .VARIABLES := 
@@ -125,8 +129,6 @@ MAKEFILES :=
 <F = $(notdir $<)
 # environment
 LC_ALL = C
-# environment
-SECURITYSESSIONID = 186c2
 # automatic
 ^F = $(notdir $^)
 # default
@@ -138,9 +140,9 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 27216
+VSCODE_PID = 3001
 # variable set hash-table stats:
-# Load=64/1024=6%, Rehash=0, Collisions=1/85=1%
+# Load=62/1024=6%, Rehash=0, Collisions=1/83=1%
 
 # Pattern-specific Variable Values
 
@@ -151,6 +153,7 @@ VSCODE_PID = 27216
 # . (device 16777220, inode 404800): 12 files, no impossibilities.
 
 # 12 files, no impossibilities in 1 directories.
+ 
 
 # Implicit Rules
 
@@ -217,13 +220,12 @@ GNUmakefile:
 
 # No general (`VPATH' variable) search path.
 
+ 
 # # of strings in strcache: 0
 # # of strcache buffers: 0
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Tue Jun 14 22:16:23 2022
+# Finished Make data base on Mon Jul 18 18:57:13 2022
 
  
-make: *** No rule to make target `all'.  Stop.
-
